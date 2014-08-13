@@ -1,5 +1,5 @@
 # collection-proxy-collect
-Collect collection data into a model
+Collect collection data into a model and keep it in sync
 
 
 ## API
