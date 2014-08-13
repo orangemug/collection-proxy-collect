@@ -1,4 +1,4 @@
-# collection-proxy-collect
+# collection-proxy-collect [![Build Status](https://travis-ci.org/orangemug/collection-proxy-collect.svg?branch=master)](https://travis-ci.org/orangemug/collection-proxy-collect)
 Collect collection data into a model and keep it in sync
 
 
