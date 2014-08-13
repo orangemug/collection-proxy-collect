@@ -31,22 +31,6 @@ describe("collection-proxy-collect", function() {
     assert.equal(m.get("count"), 10);
   });
 
-  it("should instantiate with 2 args(collection, fn) when model is defined on collection", function() {
-    var m = proxyCollect(this.collection, total);
-    assert.equal(m.get("count"), 10);
-  });
-
-  it("should not instantiate with 2 args(collection, fn) when model isn't defined on collection", function() {
-    var callback = sinon.spy();
-    this.collection.model = null;
-    try {
-      proxyCollect(this.collection, total);
-    } catch(err) {
-      callback();
-    }
-    assert(callback.calledOnce);
-  });
-
   it("should return model with collected data", function() {
     var m = proxyCollect(this.collection, Model, total);
     assert.equal(m.get("count"), 10);

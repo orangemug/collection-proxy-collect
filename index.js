@@ -1,14 +1,4 @@
-function collect(collection, fn) {
-  var Model;
-  if(arguments.length > 2) {
-    Model = arguments[1];
-    fn    = arguments[2];
-  } else if(collection.model) {
-    Model = collection.model;
-  } else {
-    throw "No model specified";
-  }
-
+function collect(collection, Model, fn) {
   var m = new Model;
 
   // Inefficient at the moment
