@@ -3,11 +3,11 @@ Collect collection data into a model and keep it in sync
 
 
 ## API
-The api is as follows
+The API is as follows
 
-    proxy.collect(collection, Model, fn);
+    proxyCollect(collection, Model, fn);
 
-Or if your collection library exposes `model` on the instance (like backbone.js does), you can ommit the `Model` param
+Where `fn` must return the attributes to map to a model.
 
 
 ## Example
