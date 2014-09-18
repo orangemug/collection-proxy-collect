@@ -11,6 +11,7 @@ function collect(collection, Model, fn) {
   collection.on("add",    update);
   collection.on("remove", update);
   collection.on("reset",  update);
+  collection.on("change", update);
   return m;
 }
 
